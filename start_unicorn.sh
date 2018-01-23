@@ -1,1 +1,1 @@
-gunicorn -b 127.0.0.1:8080 hello:wsgi_application
+gunicorn -c hello.py -b 0.0.0.0:8080 hello:wsgi_application
